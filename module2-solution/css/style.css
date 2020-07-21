@@ -16,7 +16,7 @@
 .pad{
     position: relative;
     background-color: grey;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .menu-title{
     position: absolute;
@@ -26,7 +26,7 @@
     width: 150px;
     text-align: center;
     font-weight: bold;
-    border: 1px solid black;
+    border: 2px solid black;
     font-size: 125%;
 }
 .desc{
