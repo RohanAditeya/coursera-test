@@ -1,0 +1,66 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    font-style: italic;
+}
+h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container-class{
+    background-color: white;
+    padding: 10px;
+}
+.pad{
+    position: relative;
+    background-color: grey;
+    border: 2px solid black;
+}
+.menu-title{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-top: 0px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.desc{
+    padding-top: 35px;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    margin: 0px;
+}
+body > .container-class:nth-child(2)  .menu-title{
+    background-color: burlywood;
+}
+body > .container-class:nth-child(3) .menu-title{
+    background-color: red;
+}
+body > .container-class:nth-child(4) .menu-title{
+    background-color: coral;
+}
+@media (min-width:992px){
+    .container-class{
+        float: left;
+        width: 33.33%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .container-class{
+        float: left;
+        width: 50%;
+    }
+    .container-class:nth-child(4){
+        float: left;
+        width: 100%;
+    }
+
+}
+@media (max-width:767px){
+    .container-class{
+        width: 100%;
+    }
+
+}
